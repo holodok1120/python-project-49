@@ -1,8 +1,7 @@
 import random
 
-from brain_games.engine import game_engine
-
 from brain_games.cli import get_user_name, welcome_user
+from brain_games.engine import game_engine
 from brain_games.scripts.brain_games import greet
 
 
