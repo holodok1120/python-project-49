@@ -1,5 +1,8 @@
 import prompt
 
+from brain_games.cli import get_user_name, welcome_user
+from brain_games.scripts.brain_games import greet
+
 MAX_GAMES = 3
 
 
@@ -7,10 +10,13 @@ def check_answer(correct_answer: str, user_answer: str) -> bool:
     return correct_answer == user_answer.lower()
 
 
-def game_engine(rules, user_name, get_question, get_correct_answer):
+def game_engine(rules, get_question, get_correct_answer):
+    greet()
+    user_name = get_user_name()
+    welcome_user(user_name)
     print(rules)
-    game_win = True
     game_count = 0
+
     while game_count < MAX_GAMES:
         game_count += 1
         question = get_question()
@@ -24,8 +30,6 @@ def game_engine(rules, user_name, get_question, get_correct_answer):
                       f"Correct answer was '{correct_answer}'.\n"
                       f"Let's try again, {user_name}!")
             print(result)
-            game_win = False
-            break
+            return
 
-    if game_win:
-        print(f'Congratulations, {user_name}!')
+    print(f'Congratulations, {user_name}!')
