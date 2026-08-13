@@ -4,6 +4,9 @@ version = "0.1.0"
 description = "Simple text games"
 readme = "README.md"
 requires-python = ">=3.12"
+authors = [
+    { name = "Вячеслав Холодок", email = "..." }
+]
 dependencies = [
     "prompt>=0.4.1",
 ]
