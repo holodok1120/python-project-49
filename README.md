@@ -8,17 +8,17 @@
 git clone git@github.com:holodok1120/python-project-49.git
 ```
 
-````
-cd python-project-50
-````
+```
+cd python-project-49
+```
 
-`````
+```
 uv build
-``````
+```
 
-````````
+```
 uv tool install dist/*.whl
-````````
+```
 
 ***
 [![asciicast](https://asciinema.org/a/x9Gilh32rtuYSTs2.svg)](https://asciinema.org/a/x9Gilh32rtuYSTs2)
@@ -44,7 +44,7 @@ Run any game with the corresponding command:
 - `brain-prime`
 
 ### Game 1: Even Check
-
+***
 **Rules:** Answer `yes` if the number is even, otherwise answer `no`.
 
 Examples:
@@ -52,16 +52,57 @@ Examples:
 - Question: `42` → Answer: `yes`
 
 Demo:
-***
+
 [![asciicast](https://asciinema.org/a/A5nsXwsUmq0lvl62.svg)](https://asciinema.org/a/A5nsXwsUmq0lvl62)
 
 ### Game 2: Calculator
-
-**Rules:** What is the result of the expression?.
+***
+**Rules:** What is the result of the expression?
 
 Examples:
 - Question: `4 * 10` → Answer: `40`
 
 Demo:
-***
+
 [![asciicast](https://asciinema.org/a/IBq1ZADwzLPde3lq.svg)](https://asciinema.org/a/IBq1ZADwzLPde3lq)
+
+### Game 3: Greatest Common Divisor (GCD)
+***
+**Rules:** Find the greatest common divisor of given numbers.
+
+Examples:
+- Question: `86 66` → Answer: `2`
+
+Demo:
+
+[![asciicast](https://asciinema.org/a/61b8uCWPgBEj5G7J.svg)](https://asciinema.org/a/61b8uCWPgBEj5G7J)
+
+### Game 4: Arithmetic Progression
+***
+**Rules:** What number is missing in the progression?
+
+Examples:
+- Question: `10 18 26 34 .. 50 58` → Answer: `42`
+
+Demo:
+
+[![asciicast](https://asciinema.org/a/58sykjmlN03TG6nK.svg)](https://asciinema.org/a/58sykjmlN03TG6nK)
+
+### Game 5: Prime Number
+***
+**Rules:** Answer `yes` if given number is prime. Otherwise answer `no`.
+
+Examples:
+- Question: `47` → Answer: `yes`
+- Question: `9` → Answer: `no`
+
+Demo:
+
+[![asciicast](https://asciinema.org/a/aYPxeKZqEIDFJLHe.svg)](https://asciinema.org/a/aYPxeKZqEIDFJLHe)
+
+## Development and Testing
+### Linting
+Run ruff to check for linting issues:
+```
+make lint
+```
