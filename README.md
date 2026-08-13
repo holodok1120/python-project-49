@@ -21,4 +21,47 @@ uv tool install dist/*.whl
 ````````
 
 ***
-[![asciicast](https://asciinema.org/a/zZGp4eBewZPZSihv.svg)](https://asciinema.org/a/zZGp4eBewZPZSihv)
+[![asciicast](https://asciinema.org/a/x9Gilh32rtuYSTs2.svg)](https://asciinema.org/a/x9Gilh32rtuYSTs2)
+
+## How to play
+
+This project includes five math brain games. In each game, the computer asks you a question, and you need to give the correct answer. To win, you must answer **three questions correctly in a row**. One wrong answer ends the game – you lose.
+
+The five games are:
+
+1. **Even Check** – determine if a number is even or odd.
+2. **Calculator** – calculate the result of a simple arithmetic expression (e.g., `5 + 3`).
+3. **Greatest Common Divisor (GCD)** – find the greatest common divisor of two numbers.
+4. **Arithmetic Progression** – find the missing number in a progression.
+5. **Prime Number** – decide if a number is prime or not.
+
+Run any game with the corresponding command:
+
+- `brain-even`
+- `brain-calc`
+- `brain-gcd`
+- `brain-progression`
+- `brain-prime`
+
+### Game 1: Even Check
+
+**Rules:** Answer `yes` if the number is even, otherwise answer `no`.
+
+Examples:
+- Question: `15` → Answer: `no`
+- Question: `42` → Answer: `yes`
+
+Demo:
+***
+[![asciicast](https://asciinema.org/a/A5nsXwsUmq0lvl62.svg)](https://asciinema.org/a/A5nsXwsUmq0lvl62)
+
+### Game 2: Calculator
+
+**Rules:** What is the result of the expression?.
+
+Examples:
+- Question: `4 * 10` → Answer: `40`
+
+Demo:
+***
+[![asciicast](https://asciinema.org/a/IBq1ZADwzLPde3lq.svg)](https://asciinema.org/a/IBq1ZADwzLPde3lq)
