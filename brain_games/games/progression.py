@@ -23,7 +23,7 @@ def get_correct_answer(question: str) -> str:
     question_list = question.split()
     required_index = question_list.index("..")
 
-    if required_index + 2 > len(question_list):
+    if required_index + 2 >= len(question_list):
         major_number = question_list[required_index - 1]
         minor_number = question_list[required_index - 2]
     else:
